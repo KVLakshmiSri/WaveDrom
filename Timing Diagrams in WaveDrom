@@ -1,0 +1,20 @@
+#Wavedrom:
+#In CLK = 200 MHz = 5ns period
+#OUT0 = 8ns, 125 MHz
+#OUT1 = 270 degree phase shift, 125 MHz, 8ns period
+{signal: [
+ {name: 'IN CLK', wave: 'P.....', period: 5 },
+ {name: 'OUT0 CLK', wave: 'P...', period: 8},
+ {name: 'OUT1 CLK', wave: 'P...', period: 8, phase:2},
+]
+}
+ 
+
+{signal: [
+  {},
+  {name: 'End Clock', wave: 'P..', period: 6 }, 
+  {},
+  {name: 'Start Clock', wave: 'P.....', period: 3 }, 
+  {},
+]
+}
